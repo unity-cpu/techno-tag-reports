@@ -354,5 +354,5 @@ def remove_insta_ban():
 @app.route("/instaban/list", methods=["GET"])
 def list_insta_bans():
     members = redis.smembers("insta_bans")
-    return jsonify({"insta_bans": list(members) if members else []}), 200//hello
+    return jsonify({"insta_bans": list(members) if members else []}), 200
 
